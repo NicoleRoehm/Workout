@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/endt_text"
+            android:layout_width="277dp"
+            android:layout_height="181dp"
+            android:fontFamily="@font/francois_one"
+            android:text="You´re training are finished today. Gratulation :) "
+            android:textAlignment="center"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.256" />
+
+        <Button
+            android:id="@+id/return_button"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:backgroundTint="#944FA194"
+            android:text="return"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/endt_text"
+            app:layout_constraintStart_toStartOf="@+id/endt_text"
+            app:layout_constraintTop_toBottomOf="@+id/endt_text"
+            app:layout_constraintVertical_bias="0.93" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
